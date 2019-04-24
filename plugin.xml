@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.5/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label>FroshTinker</label>
+    <version>1.0.0</version>
+    <copyright>Friends of Shopware</copyright>
+    <license>MIT</license>
+    <link>https://friendsofshopware.github.io/</link>
+    <author>Friends of Shopware</author>
+    <changelog version="1.0.0">
+        <changes>
+            <![CDATA[
+                <ul>
+                    <li>Added command frosh:tinker with a dependency for psy/psysh for interactive tinkering inside the Shopware runtime.</li>
+                </ul>
+                <ul>
+                    <li>Added a caster for instances of ModelEntity and a uniform way to add new casters via tagged services.</li>
+                </ul>
+            ]]>
+        </changes>
+    </changelog>
+</plugin>

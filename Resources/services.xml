@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service class="FroshTinker\Commands\TinkerCommand" id="frosh_tinker.commands.tinker_command">
+            <tag name="console.command" command="frosh:tinker"/>
+            <argument type="string">frosh:tinker</argument>
+            <argument type="tagged" tag="frosh_tinker.caster"/>
+        </service>
+
+        <service class="FroshTinker\Components\Casters\ModelEntityCaster"
+                 id="frosh_tinker.components.casters.model_entity_caster">
+            <tag name="frosh_tinker.caster"/>
+            <argument id="models" type="service"/>
+        </service>
+
+    </services>
+</container>

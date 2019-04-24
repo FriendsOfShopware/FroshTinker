@@ -1,0 +1,34 @@
+{
+    "name": "frosh/tinker",
+    "keywords": [
+        "shopware",
+        "psysh",
+        "tinker",
+        "plugin"
+    ],
+    "description": "PsySH integration for Shopware",
+    "license": "MIT",
+    "type": "shopware-plugin",
+    "version": "1.0.0",
+    "extra": {
+        "installer-name": "FroshTinker"
+    },
+    "require": {
+        "php": ">=7.1",
+        "psy/psysh": "^0.9.9"
+    },
+    "conflict": {
+        "symfony/var-dumper": "^4.0",
+        "symfony/debug": "^4.0",
+        "symfony/console": "^4.0",
+        "symfony/stopwatch": "^4.0",
+        "symfony/process": "^4.0",
+        "symfony/options-resolver": "^4.0",
+        "symfony/finder": "^4.0",
+        "symfony/filesystem": "^4.0",
+        "symfony/event-dispatcher": "^4.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14"
+    }
+}
